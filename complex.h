@@ -3,7 +3,7 @@
 #define COMPLEX_H
 class Complex{
 public:
-void sum(Complex obj,Complex obj1){
+void sum(Complex& obj,Complex& obj1){
         std::cout<<'('<<obj.real_part<<' ';
         if (obj.imaginary_part>=0){
             std::cout<<"+ ";
@@ -19,7 +19,7 @@ void sum(Complex obj,Complex obj1){
         }
         std::cout<<obj.imaginary_part+obj1.imaginary_part<<obj1.tmp<<"\n";
     }
-    void sub(Complex obj,Complex obj1){
+    void sub(Complex& obj,Complex& obj1){
         std::cout<<'('<<obj.real_part<<' ';
         if (obj.imaginary_part>=0){
             std::cout<<"+ ";
@@ -35,7 +35,7 @@ void sum(Complex obj,Complex obj1){
         }
         std::cout<<obj.imaginary_part-obj1.imaginary_part<<obj1.tmp<<"\n";
     }
-    void mul(Complex obj,Complex obj1){
+    void mul(Complex& obj,Complex& obj1){
         std::cout<<'('<<obj.real_part<<' ';
         if (obj.imaginary_part>=0){
             std::cout<<"+ ";
